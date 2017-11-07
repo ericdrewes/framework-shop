@@ -7,7 +7,9 @@ export default function ProductTile({ addToCart, logo, name, price }) {
 	return (
 		<div className="product-tile">
 			<section className="product-tile__info">
-				<h3>{name}</h3>
+				<Link to={`/details/${name}`}>
+					<h3> {name} </h3>
+				</Link>
 				<button className="product-tile__buy" onClick={addToCart}>
 					${price}
 				</button>

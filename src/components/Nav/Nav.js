@@ -7,18 +7,18 @@ import javascriptLogo from '../../assets/javascript.svg'
 
 export function Nav({ cartTotal }) {
 	return (
-	<nav className="nav">
-		<Link to=>
-			<div className="nav__header-wrapper">
-				<img alt="javascript logo" className="nav__javascript-logo" src={javascriptLogo} />
-				<h3 className="nav__header">The JavaScript Framework Shop</h3>
-			</div>
-		</Link>
+		<nav className="nav">
+			<Link to="/">
+				<div className="nav__header-wrapper">
+					<img alt="javascript logo" className="nav__javascript-logo" src={javascriptLogo} />
+					<h3 className="nav__header">The JavaScript Framework Shop</h3>
+				</div>
+			</Link>
 
-		<Link to='/cart'>
-			<p className="nav__cart">Cart ( ${cartTotal} )</p>
-		</Link>
-	</nav>
+			<Link to="/cart">
+				<p className="nav__cart">Cart (${cartTotal} )</p>
+			</Link>
+		</nav>
 	)
 }
 

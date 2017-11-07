@@ -13,6 +13,6 @@ export default (
 		<Route path="/details/:name" component={Details} />
 		<Route path="/cart" component={Cart} />
 		<Route path="/shop" component={Shop} />
-		<Route path="/thank-you" component="ThankYou"
+		<Route path="/thank-you" component="ThankYou" />
 	</Switch>
 )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import ProductTile from '../ProductTile/ProductTile'
+import ProductTile from './ProductTile/ProductTile'
 
 import './Shop.css'
 
@@ -15,13 +15,14 @@ const productTiles = products.map( (product) => (
 			logo={product.logo}
 			price={product.price}
 		/>
+	));
 
 	return (
 		<div className="shop">
 			<h1 className="shop__header">Shop</h1>
 			<div className="shop__products-wrapper">{productTiles}
 		</div>
-	)
+	);
 }
 
 function mapStateToProps({ products }) {
